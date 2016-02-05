@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
   <div class="green"></div>
@@ -15,6 +16,31 @@
   <br>
 
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Color_icon_green.svg/2000px-Color_icon_green.svg.png" height=100 alt="greenbox">
+
+  <br>
+
+  <canvas id="canvas_1" width="300" height="300"></canvas>
+
+  <script type="text/javascript">
+    var canvas = document.getElementById('canvas_1');
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#66ff66';
+    ctx.fillRect(0,0,300,300);
+  </script>
+
+  <canvas id="canvas_2" width="300" height="300"></canvas>
+  <script type="text/javascript">
+    var canvas = document.getElementById('canvas_2');
+    var ctx = canvas.getContext('2d');
+
+    ctx.beginPath();
+    ctx.moveTo(20,20);
+    ctx.lineTo(20,100);
+    ctx.lineTo(100,100);
+    ctx.lineTo(100,20);
+    ctx.fillStyle = '#339966';
+    ctx.fill();
+  </script>
 
 </body>
 </html>
