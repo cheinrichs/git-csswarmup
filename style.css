@@ -1,0 +1,10 @@
+.green {
+  height: 40px;
+  width: 40px;
+  background-color: green;
+}
+
+.greentext{
+   color: green;
+   background-color: green;
+}
